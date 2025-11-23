@@ -4,16 +4,16 @@
     "spacing": 4,
     "modules-left": [
         "sway/workspaces",
-        "sway/mode"
+        "sway/mode",
+	"sway/window"
     ],
     "modules-center": [
-        "sway/window"
+        "clock"
     ],
     "modules-right": [
         "idle_inhibitor",
         "pulseaudio",
         "battery",
-        "clock",
         "tray"
     ],
     "sway/workspaces": {
