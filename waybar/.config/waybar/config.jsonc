@@ -1,0 +1,57 @@
+// -*- mode: jsonc -*-
+{
+    "height": 30,
+    "spacing": 4,
+    "modules-left": [
+        "sway/workspaces",
+        "sway/mode"
+    ],
+    "modules-center": [
+        "sway/window"
+    ],
+    "modules-right": [
+        "idle_inhibitor",
+        "pulseaudio",
+        "battery",
+        "clock",
+        "tray"
+    ],
+    "sway/workspaces": {
+        "format": "{name}"
+    },
+    "sway/mode": {
+        "format": "{}"
+    },
+    "sway/window": {
+        "max-length": 80
+    },
+    "idle_inhibitor": {
+        "format": "{status}",
+        "format-icons": {
+            "activated": "Idle Inhibitor: ON",
+            "deactivated": "Idle Inhibitor: OFF"
+        }
+    },
+    "tray": {
+        "spacing": 10
+    },
+    "clock": {
+        "format": "{:%Y-%m-%d %H:%M}",
+        "tooltip-format": "<tt><small>{calendar}</small></tt>"
+    },
+    "battery": {
+        "states": {
+            "warning": 30,
+            "critical": 15
+        },
+        "format": "Battery: {capacity}%",
+        "format-charging": "Battery: {capacity}% (Charging)",
+        "format-plugged": "Battery: {capacity}% (Plugged)",
+        "format-full": "Battery: {capacity}% (Full)"
+    },
+    "pulseaudio": {
+        "format": "Volume: {volume}%",
+        "format-muted": "Volume: Muted",
+        "on-click": "pavucontrol"
+    }
+}

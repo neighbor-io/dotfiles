@@ -36,7 +36,8 @@ exec nm-applet --indicator
 # This is commented in Debian, because the Sway wallpaper files are in a separate
 # package `sway-backgrounds`. Installing this package drops a config file to
 # /etc/sway/config.d/
-output * bg /usr/share/backgrounds/sway/Sway_Wallpaper_Blue_1920x1080.png fill
+#output * bg /usr/share/backgrounds/sway/Sway_Wallpaper_Blue_1920x1080.png fill
+output * bg ./red_distortion_2.png fill
 #
 # Example configuration:
 #
@@ -237,6 +238,15 @@ bar {
 #
 gaps inner 8
 gaps outer 8
+
+# Monochromatic color scheme (grayscale)
+# class                 border  backgr. text    indicator child_border
+client.focused          #ffffff #1a1a1a #ffffff #ffffff   #ffffff
+client.focused_inactive #404040 #0a0a0a #666666 #404040   #404040
+client.unfocused        #202020 #000000 #4a4a4a #202020   #202020
+client.urgent           #ffffff #404040 #ffffff #ffffff   #ffffff
+client.placeholder      #000000 #0c0c0c #ffffff #000000   #0c0c0c
+client.background       #000000
 
 #include /etc/sway/config.d/*
 
