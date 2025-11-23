@@ -240,6 +240,10 @@ bar {
 gaps inner 8
 gaps outer 8
 
+# Allow switching between workspaces with left and right swipes
+bindgesture swipe:right workspace prev
+bindgesture swipe:left workspace next
+
 # Monochromatic color scheme (grayscale)
 # class                 border  backgr. text    indicator child_border
 client.focused          #ffffff #1a1a1a #ffffff #ffffff   #ffffff
