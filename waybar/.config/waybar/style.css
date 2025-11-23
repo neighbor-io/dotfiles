@@ -5,7 +5,7 @@
 
 window#waybar {
     background-color: #000000;
-    border-bottom: 2px solid #ffffff;
+    border-bottom: 2px solid #333333;
     color: #ffffff;
 }
 
@@ -26,7 +26,7 @@ button:hover {
 }
 
 #workspaces button:hover {
-    background: #333333;
+    border-bottom: 2px solid #ffffff;
 }
 
 #workspaces button.focused {
@@ -76,8 +76,8 @@ button:hover {
 }
 
 #idle_inhibitor.activated {
-    background-color: #ffffff;
-    color: #000000;
+    border-bottom: 2px solid #ffffff;
+    color: #ffffff;
 }
 
 #tray {
