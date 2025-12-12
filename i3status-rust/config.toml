@@ -1,0 +1,22 @@
+[theme]
+theme = "plain"
+
+[icons]
+icons = "none"
+
+[[block]]
+block = "net"
+format = " $icon $ssid "
+format_alt = " $icon $ip "
+
+[[block]]
+block = "sound"
+
+[[block]]
+block = "battery"
+format = " $percentage "
+
+[[block]]
+block = "time"
+format = " $timestamp.datetime(f:'%Y-%m-%d %I:%M %p') "
+interval = 1
